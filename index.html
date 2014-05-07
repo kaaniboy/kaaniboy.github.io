@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Age of the Ottomans</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.11.0.js'></script>
+  <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+  
+  <style type='text/css'>
+    @import url('http://getbootstrap.com/dist/css/bootstrap.css');
+ .column {
+    height: 92%;
+    float:left;
+    margin: 0 0 0 5px;
+    border:solid thin #999;
+    /*text-align:center;*/
+    border-radius:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    overflow-y: auto;
+}
+#container {
+    width:100%;
+    height: 90%;
+    margin: 25px auto 0 auto;
+}
+#left {
+    background-color: rgba(0, 0, 0, 0.70);
+    width: 60%;
+}
+#right {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 38%;
+}
+.answer {
+    background-color: rgba(227, 10, 23, .6);
+    color: white;
+    font-size: 18px;
+    border-radius:10px;
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-image: url("http://farm5.staticflickr.com/4013/4485931371_a02815cb0e_o.jpg");
+}
+#answers {
+    overflow-x: hidden;
+    float:left;
+    width: 90%;
+}
+#question {
+}
+#title {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+    border-radius:10px;
+    background-color: rgba(227, 10, 23, .9);
+    /*border:solid thick black;*/
+}
+
+#currentHealth {
+    color: green;
+}
+
+#image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#modalBody {
+    font-size: 25px;
+}
+
+#redButton {
+    background-color: rgba(227, 10, 23, .7);    !important
+}
+h1, h2, h3, h4 {
+    color: white;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+var question1 = {
+    text: "The roots of the Ottoman empire can be traced all the way back to 1299. However, a certain event most famously marks the beginning of Ottoman power in Europe and Asia. What event is this?",
+    answer1: "The siege of Constantinople",
+    answer2: "Battle of Chaldiran",
+    answer3: "The beginning of the Janisarry system in the Balkans",
+    answer4: "Suleiman the Magnificent's incredible political and social reforms"
+}
+
+var question1 = {
+    text: "The roots of the Ottoman empire can be traced all the way back to 1299. However, a certain event most famously marks the beginning of Ottoman power in Europe and Asia. What event is this?",
+    answer1: "The siege of Constantinople",
+    answer2: "Battle of Chaldiran",
+    answer3: "The beginning of the Janisarry system in the Balkans",
+    answer4: "Suleiman the Magnificent's incredible political and social reforms"
+}
+
+
+var questionList = [question1]
+var currentQuestion = -1
+var introMessage = $('#introMessage').val()
+var incorrectMessages = []
+var correctMessages = []
+var health = 100
+
+
+function showNextQuestion() {
+    currentQuestion++;
+    $('#question').html("<h4><b>" + questionList[currentQuestion].text + "</h4><b>");
+    $('#answer1').html(questionList[currentQuestion].answer1);
+    $('#answer2').html(questionList[currentQuestion].answer2);
+    $('#answer3').html(questionList[currentQuestion].answer3);
+    $('#answer4').html(questionList[currentQuestion].answer4);
+}
+
+function onClick() {
+    $('#answers').animate({
+        opacity: '0'
+    });
+
+    $('#answers').animate({
+        opacity: '1'
+    });
+    
+    showNextQuestion();
+}
+
+$('.answer').click(onClick);
+
+$('#myModal').modal() // initialized with defaults
+$('#myModal').modal('show')
+$('#modalBody').html(introMessage);
+
+showNextQuestion();
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <body>
+    <div id="container">
+        <div id="title">
+             <h1><b>Age of the Ottomans</b></h1>
+
+        </div>
+        <div class="column" id="left">
+            <div id="question">
+            </div>
+            <div id="answers">
+                <div class="answer" id="answer1"></div>
+                
+                <div class="answer" id="answer2"></div>
+                <div class="answer" id="answer3"></div>
+                <div class="answer" id="answer4"></div>
+            </div>
+        </div>
+        <div class="column" id="right">
+             <h3><b>State of the Union</b></h3>
+            <img id="image" src="http://img13.imagevenue.com/aAfkjfp01fo1i-23801/loc64/243513600_hagia_sofia_122_64lo.jpg"/>
+            <div style="color: white;">
+                <h4>
+                    Current Health: <span id="currentHealth">Healthy</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="modalBody" class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="redButton" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<input type="hidden" id="introMessage" value="Welcome to <b>Age of the Ottomans</b>. Throughout this review game you will play as an illustrous Ottoman sultan. For every question you are able to correctly answer, your empire will grow and become more powerful. However, if you are unable to answer the question, your empire will weaken. The goal is to survive as long as you can before your empire collapses. <br><br> The image of the Hagia Sofia on the right side of the game represents the current status of your empire.<br><br> <center><b>Good Luck!</b></center>"/>
+  
+</body>
+
+
+</html>
+
