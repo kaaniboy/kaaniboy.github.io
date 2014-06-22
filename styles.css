@@ -41,7 +41,6 @@ body {
     font-family: 'Josefin Slab', serif;
     color: white;
     font-weight: 700;
-    padding-top: 200px;
     text-align: center;
 }
 .pane-2 {
@@ -96,15 +95,15 @@ body {
     border: none;
 }
 
-.social-panel {
+.social-pane {
     margin-top: 30px;
     text-align: center;
-    width: 100%;
 }
 
 .social-button {
     width: 26%;
-    margin: 0 10px 0 10px;
+    margin-bottom: 15px;
+    padding: 15px;
     color: white;
     
     -webkit-transition: all .5s ease;
