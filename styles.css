@@ -1,14 +1,13 @@
 html,body { 
-    margin:0; 
-    padding:0; 
-    height:100%; 
-    width:100%; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
 }
 
 body {
     background-size: 100%;
-            background-image: url('http://farm5.staticflickr.com/4114/4760855863_f6973870d8_b.jpg');
-    
+    background-image: url('http://farm5.staticflickr.com/4114/4760855863_f6973870d8_b.jpg');
 }
 
 .page-title {
@@ -32,7 +31,6 @@ body {
 
 .pane-1 {
     background-color: rgba(0, 0, 0, .7);
-    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -64,6 +62,7 @@ body {
 
 .pane-4 {
     background-color: #F26C4F;
+    text-align: center;
 }
 .col-title {
     text-align: center;
