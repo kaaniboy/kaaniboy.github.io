@@ -41,13 +41,8 @@ body {
     font-family: 'Josefin Slab', serif;
     color: white;
     font-weight: 700;
-    width: 500px;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    top: 50%; 
-    margin-left: -237px;
-    margin-top: -75px;
+    padding-top: 200px;
+    text-align: center;
 }
 .pane-2 {
     background-color: #3A89C9;
@@ -108,7 +103,7 @@ body {
 }
 
 .social-button {
-    width: 20%;
+    width: 26%;
     margin: 0 10px 0 10px;
     color: white;
     
@@ -121,7 +116,7 @@ body {
 }
 
 .social-button:hover {
-    width: 22%;
+    width: 27%;
     text-decoration: none;
     
     -webkit-transition: all .5s ease;
