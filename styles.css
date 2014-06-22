@@ -24,7 +24,6 @@ body {
 
 .pane h1 {
     text-align: center;
-    font-family: 'Josefin Slab', serif;
     font-weight: 700;
     padding-bottom: 50px;
 }
@@ -52,6 +51,8 @@ body {
 }
 
 .pane {
+    padding-left: 10px;
+    padding-right: 10px;
     color: #E9F2F9;
 }
 
