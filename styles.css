@@ -163,6 +163,16 @@ body {
     font-size: 1.5em;
 }
 
+.contact-form input,.contact-form textarea {
+    border: none;
+    border-radius: 0;
+}
+
+.contact-form input[type="submit"] {
+    padding: 20px;
+    font-weight: 700;
+}
+
 
 
 
