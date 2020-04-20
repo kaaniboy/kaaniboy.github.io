@@ -10,7 +10,7 @@
   body {
     /* https://github.com/dreampulse/computer-modern-web-font */
     font-family: "Computer Modern Sans", serif; 
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.7;
     padding: 1em;
     margin: auto;
@@ -252,7 +252,7 @@
   
   @media only screen and (min-width: 480px) {
     body {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   @media only screen and (min-width: 768px) {
@@ -269,7 +269,7 @@
     }
   
     body {
-      font-size: 12pt;
+      font-size: 18pt;
       max-width: 100%;
     }
   
