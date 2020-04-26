@@ -13,7 +13,7 @@ computer science, as well as anything else that interests me.
         <li>
             <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
             ::
-            <a class="post-link" href="/math/{{ post.url }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
 </ul>
