@@ -6,7 +6,8 @@ title: Experience
 
 ### Work Experience
 <ul>
-    <li> 2020 :: Incoming Software Engineer at <b>Two Sigma</b></li>
+    <li> 2024 :: Incoming Software Engineer at <b>Jane Street</b></li>
+    <li> 2020 - 2023 :: Software Engineer at <b>Two Sigma</b></li>
     <li> 2019 :: Software Engineering Intern at <b>Facebook</b></li>
     <li> 2018 :: Software Engineering Intern at <b>Amazon</b></li>
     <li> 2018 :: Software Engineering Intern at <b>Bloomberg</b></li>
